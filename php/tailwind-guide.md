@@ -78,10 +78,10 @@ Paste the following code into it.
 @tailwind utilities;
 ```
 
-Now, link that input.css file index.php tat we created earlier.
+Now, link that input.css file index.php that we created earlier.
 
 **Step 6.** Start the Tailwind CLI build process: run the following command in the Terminal.
-`
+
 ```sh
 npx tailwindcss -i input.css -o output.css --watch
 ```
@@ -113,7 +113,7 @@ One more thing! Before deploying to production, make sure to minify output.css f
   ...
   "scripts": {
     "dev": "npx tailwindcss -i input.css -o output.css --watch",
-    "dev": "npx tailwindcss -i input.css -o output.css --minify"
+    "build": "npx tailwindcss -i input.css -o output.css --minify"
   }
 }
 ```
